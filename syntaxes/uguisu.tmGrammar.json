@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "fileTypes": [
+    "ug"
+  ],
+  "name": "Uguisu",
+  "scopeName": "source.uguisu",
+  "patterns": [
+    {
+      "include": "#root"
+    }
+  ],
+  "repository": {
+    "root": {
+      "patterns": [
+        {
+          "include": "#operators"
+        },
+        {
+          "include": "#controlKeywords"
+        },
+        {
+          "include": "#otherKeywords"
+        },
+        {
+          "include": "#storageType"
+        },
+        {
+          "include": "#storageModifier"
+        },
+        {
+          "include": "#constantNumeric"
+        },
+        {
+          "include": "#comma"
+        },
+        {
+          "include": "#semi"
+        }
+      ]
+    },
+    "operators": {
+      "match": "[+\\-*/=:]",
+      "name": "keyword.operator.uguisu"
+    },
+    "controlKeywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.uguisu",
+          "match": "\\b(return|break|loop|if|else)\\b"
+        }
+      ]
+    },
+    "otherKeywords": {
+      "patterns": [
+        {
+          "name": "keyword.other.uguisu",
+          "match": "\\b(const|let)\\b"
+        }
+      ]
+    },
+    "storageType": {
+      "patterns": [
+        {
+          "name": "storage.type.uguisu",
+          "match": "\\b(fn|number)\\b"
+        }
+      ]
+    },
+    "storageModifier": {
+      "patterns": [
+        {
+          "name": "storage.modifier.uguisu",
+          "match": "\\b(external)\\b"
+        }
+      ]
+    },
+    "constantNumeric": {
+      "patterns": [
+        {
+          "name": "constant.numeric.uguisu",
+          "match": "[+-]?\\d+"
+        }
+      ]
+    },
+    "comma": {
+      "patterns": [
+        {
+          "name": "punctuation.comma.uguisu",
+          "match": ","
+        }
+      ]
+    },
+    "semi": {
+      "patterns": [
+        {
+          "name": "punctuation.semi.uguisu",
+          "match": ";"
+        }
+      ]
+    }
+  }
+}
