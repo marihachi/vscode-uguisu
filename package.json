@@ -6,6 +6,10 @@
   "version": "0.1.0",
   "author": "Marihachi",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marihachi/vscode-uguisu.git"
+  },
   "engines": {
     "vscode": "^1.66.0"
   },

@@ -14,6 +14,12 @@
     "root": {
       "patterns": [
         {
+          "include": "#commentLines"
+        },
+        {
+          "include": "#commentRanges"
+        },
+        {
           "include": "#operators"
         },
         {
@@ -26,7 +32,10 @@
           "include": "#storageType"
         },
         {
-          "include": "#storageModifier"
+          "//include": "#storageModifier"
+        },
+        {
+          "include": "#constantBoolean"
         },
         {
           "include": "#constantNumeric"
@@ -39,9 +48,27 @@
         }
       ]
     },
+    "commentLines": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.uguisu",
+          "begin": "//",
+          "end": "$"
+        }
+      ]
+    },
+    "commentRanges": {
+      "patterns": [
+        {
+          "name": "comment.block.uguisu",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
     "operators": {
-      "match": "[+\\-*/=:]",
-      "name": "keyword.operator.uguisu"
+      "name": "keyword.operator.uguisu",
+      "match": "(\\+=|-=|\\*=|/=|%=|==|\\!=|<=|>=|\\+|-|\\*|/|%|<|>|:|=)"
     },
     "controlKeywords": {
       "patterns": [
@@ -71,7 +98,7 @@
       "patterns": [
         {
           "name": "storage.modifier.uguisu",
-          "match": "\\b(external)\\b"
+          "match": "\\b()\\b"
         }
       ]
     },
@@ -80,6 +107,14 @@
         {
           "name": "constant.numeric.uguisu",
           "match": "[+-]?\\d+"
+        }
+      ]
+    },
+    "constantBoolean": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.uguisu",
+          "match": "\\b(true|false)\\b"
         }
       ]
     },
