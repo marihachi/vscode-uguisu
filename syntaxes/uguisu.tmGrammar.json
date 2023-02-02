@@ -68,7 +68,7 @@
     },
     "operators": {
       "name": "keyword.operator.uguisu",
-      "match": "(\\+=|-=|\\*=|/=|%=|==|\\!=|<=|>=|\\+|-|\\*|/|%|<|>|:|=)"
+      "match": "(\\+=|-=|\\*=|/=|%=|==|\\!=|<=|>=|\\+|-|\\*|/|%|<|>|:|=|\\!|\\&\\&|\\|\\|)"
     },
     "controlKeywords": {
       "patterns": [
@@ -82,7 +82,7 @@
       "patterns": [
         {
           "name": "keyword.other.uguisu",
-          "match": "\\b(const|let)\\b"
+          "match": "\\b(const|let|var)\\b"
         }
       ]
     },
