@@ -82,7 +82,7 @@
       "patterns": [
         {
           "name": "keyword.other.uguisu",
-          "match": "\\b(const|let|var)\\b"
+          "match": "\\b(var|const|let)\\b"
         }
       ]
     },
@@ -90,7 +90,7 @@
       "patterns": [
         {
           "name": "storage.type.uguisu",
-          "match": "\\b(fn|number)\\b"
+          "match": "\\b(fn|number|bool)\\b"
         }
       ]
     },

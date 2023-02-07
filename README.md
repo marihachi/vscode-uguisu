@@ -7,7 +7,7 @@ Uguisu language support for Visual Studio Code.
 - Syntax highlight
 
 ## Uguisu version
-Uguisu ^0.4.0
+Uguisu 0.6
 
 ## License
 MIT License
