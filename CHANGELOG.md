@@ -1,15 +1,14 @@
 <!--
 ## x.x.x (unreleased)
 
-### Features
-
-### Improvements
-
-### Changes
-
-### Bugfixes
-
 -->
 
-## x.x.x (unreleased)
+## 0.6.0 (unreleased)
+
+- 演算子の追加: `!` `&&` `||`
+- キーワードの追加: `var` `bool`
+- 簡易的に識別子をサポート。
+
+## 0.4.0 (2023/01/28)
+
 Initial release
