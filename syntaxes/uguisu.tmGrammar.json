@@ -7,47 +7,43 @@
   "scopeName": "source.uguisu",
   "patterns": [
     {
-      "include": "#root"
+      "include": "#commentLines"
+    },
+    {
+      "include": "#commentRanges"
+    },
+    {
+      "include": "#constantNumeric"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#controlKeywords"
+    },
+    {
+      "include": "#otherKeywords"
+    },
+    {
+      "include": "#storageType"
+    },
+    {
+      "//include": "#storageModifier"
+    },
+    {
+      "include": "#constantBoolean"
+    },
+    {
+      "include": "#identifier"
+    },
+    {
+      "include": "#comma"
+    },
+    {
+      "include": "#semi"
     }
   ],
   "repository": {
-    "root": {
-      "patterns": [
-        {
-          "include": "#commentLines"
-        },
-        {
-          "include": "#commentRanges"
-        },
-        {
-          "include": "#operators"
-        },
-        {
-          "include": "#controlKeywords"
-        },
-        {
-          "include": "#otherKeywords"
-        },
-        {
-          "include": "#storageType"
-        },
-        {
-          "//include": "#storageModifier"
-        },
-        {
-          "include": "#constantBoolean"
-        },
-        {
-          "include": "#constantNumeric"
-        },
-        {
-          "include": "#comma"
-        },
-        {
-          "include": "#semi"
-        }
-      ]
-    },
     "commentLines": {
       "patterns": [
         {
@@ -67,8 +63,12 @@
       ]
     },
     "operators": {
-      "name": "keyword.operator.uguisu",
-      "match": "(\\+=|-=|\\*=|/=|%=|==|\\!=|<=|>=|\\+|-|\\*|/|%|<|>|:|=|\\!|\\&\\&|\\|\\|)"
+      "patterns": [
+        {
+          "name": "keyword.operator.uguisu",
+          "match": "(\\+=|-=|\\*=|/=|%=|==|\\!=|<=|>=|\\+|-|\\*|/|%|<|>|:|=|\\!|\\&\\&|\\|\\|)"
+        }
+      ]
     },
     "controlKeywords": {
       "patterns": [
@@ -115,6 +115,14 @@
         {
           "name": "constant.language.boolean.uguisu",
           "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "identifier": {
+      "patterns": [
+        {
+          "name": "entity.other.uguisu",
+          "match": "[A-Za-z_][A-Za-z0-9_]*"
         }
       ]
     },
