@@ -28,7 +28,7 @@
       "include": "#storageType"
     },
     {
-      "//include": "#storageModifier"
+      "include": "#storageModifier"
     },
     {
       "include": "#constantBoolean"
@@ -85,7 +85,7 @@
       "patterns": [
         {
           "name": "keyword.other.uguisu",
-          "match": "\\b(var|const|let)\\b"
+          "match": "\\b(var|const|let|new)\\b"
         }
       ]
     },
@@ -93,7 +93,7 @@
       "patterns": [
         {
           "name": "storage.type.uguisu",
-          "match": "\\b(fn|struct|number|bool)\\b"
+          "match": "\\b(fn|struct|number|string|bool)\\b"
         }
       ]
     },
@@ -101,7 +101,7 @@
       "patterns": [
         {
           "name": "storage.modifier.uguisu",
-          "match": "\\b()\\b"
+          "match": "\\b(import|export)\\b"
         }
       ]
     },
