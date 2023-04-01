@@ -34,6 +34,9 @@
       "include": "#constantBoolean"
     },
     {
+      "include": "#constantString"
+    },
+    {
       "include": "#identifier"
     },
     {
@@ -90,7 +93,7 @@
       "patterns": [
         {
           "name": "storage.type.uguisu",
-          "match": "\\b(fn|number|bool)\\b"
+          "match": "\\b(fn|struct|number|bool)\\b"
         }
       ]
     },
@@ -115,6 +118,15 @@
         {
           "name": "constant.language.boolean.uguisu",
           "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "constantString": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.uguisu",
+          "begin": "\"",
+          "end": "\""
         }
       ]
     },
