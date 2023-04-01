@@ -33,5 +33,11 @@
         "path": "./syntaxes/uguisu.tmGrammar.json"
       }
     ]
+  },
+  "scripts": {
+    "pack": "vsce package"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
   }
 }
