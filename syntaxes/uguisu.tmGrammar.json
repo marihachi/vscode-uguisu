@@ -127,6 +127,11 @@
           "name": "string.quoted.double.uguisu",
           "begin": "\"",
           "end": "\""
+        },
+        {
+          "name": "string.quoted.single.uguisu",
+          "begin": "'",
+          "end": "'"
         }
       ]
     },
