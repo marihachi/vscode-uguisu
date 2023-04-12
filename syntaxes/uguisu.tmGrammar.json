@@ -28,7 +28,7 @@
       "include": "#storageType"
     },
     {
-      "include": "#storageModifier"
+      "//include": "#storageModifier"
     },
     {
       "include": "#constantBoolean"
