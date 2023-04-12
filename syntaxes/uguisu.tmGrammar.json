@@ -85,7 +85,7 @@
       "patterns": [
         {
           "name": "keyword.other.uguisu",
-          "match": "\\b(var|const|let|new)\\b"
+          "match": "\\b(var|new)\\b"
         }
       ]
     },
@@ -93,7 +93,7 @@
       "patterns": [
         {
           "name": "storage.type.uguisu",
-          "match": "\\b(fn|struct|number|string|bool)\\b"
+          "match": "\\b(fn|struct|number|string|char|bool|array)\\b"
         }
       ]
     },
